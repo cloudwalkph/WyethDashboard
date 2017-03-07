@@ -15,7 +15,16 @@ class CreateCensusesTable extends Migration
     {
         Schema::create('censuses', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name')->default('');
+            $table->string('age')->default('');
+            $table->string('mobile')->default('');
+            $table->string('email')->default('');
+            $table->string('promo_crayola_bunding')->default('0');
+            $table->string('promo_zip_it')->default('0');
+            $table->string('promo_none')->default('0');
+            $table->string('created')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
