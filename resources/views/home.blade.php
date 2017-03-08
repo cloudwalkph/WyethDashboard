@@ -16,6 +16,7 @@
                     <th>Promo Crayola Bunding</th>
                     <th>Promo Zip It</th>
                     <th>Promo None</th>
+                    <th>Date Inputted</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -28,6 +29,7 @@
                         <td>{{ $c->promo_crayola_bunding }}</td>
                         <td>{{ $c->promo_zip_it }}</td>
                         <td>{{ $c->promo_none }}</td>
+                        <td>{{ $c->created }}</td>
                     </tr>
                 @endforeach
                 </tbody>
